@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+// Подключение шрифтов
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Базовые стили
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+// Стили заголовков для десктопа
+h1 {
+  font-size: $h1-desktop-font-size;
+  line-height: $h1-desktop-line-height;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: $h2-desktop-font-size;
+  line-height: $h2-desktop-line-height;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+// Медиа-запрос для мобильных устройств (414px - ширина для тестов)
+@media (max-width: 414px) {
+  h1 {
+    font-size: $h1-mobile-font-size;
+    line-height: $h1-mobile-line-height;
+  }
+  
+  h2 {
+    font-size: $h2-mobile-font-size;
+    line-height: $h2-mobile-line-height;
+  }
+}

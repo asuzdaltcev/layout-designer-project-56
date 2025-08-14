@@ -1,0 +1,25 @@
+{
+  "name": "layout-designer-project-56",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/asuzdaltcev/layout-designer-project-56/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/asuzdaltcev/layout-designer-project-56/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/scss/app.scss src/css/app.css",
+    "sass:watch": "sass --watch src/scss/app.scss src/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asuzdaltcev/layout-designer-project-56.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asuzdaltcev/layout-designer-project-56/issues"
+  },
+  "homepage": "https://github.com/asuzdaltcev/layout-designer-project-56#readme",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
