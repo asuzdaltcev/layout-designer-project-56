@@ -53,5 +53,117 @@ h2 {
     line-height: 27px;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #cacaca;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #F89202;
+}
+
+.banner {
+  background: linear-gradient(135deg, #5328A1 0%, #3C3B3D 100%);
+  padding: 200px 0 100px;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cacaca;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #cacaca;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.banner-button {
+  background: #F89202;
+  color: #08020D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.banner-button:hover {
+  background: rgb(197.408, 116.216, 1.592);
+}
+
+@media (max-width: 414px) {
+  .header {
+    top: 15px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .banner {
+    padding: 150px 0 80px;
+  }
+  .banner-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .banner-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .banner-button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
