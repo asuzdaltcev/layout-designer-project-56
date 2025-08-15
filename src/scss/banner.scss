@@ -96,7 +96,7 @@
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
   .banner {
-    padding: 248px 0 200px;
+    padding: 249px 0 200px;
   }
 
   .banner-title {
@@ -117,7 +117,8 @@
 
   .form-row {
     flex-direction: column;
-    gap: 27px;
+    gap: 24px;
+    margin-bottom: 24px;
   }
 
   .form-input {
