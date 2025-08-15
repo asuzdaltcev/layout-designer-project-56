@@ -444,17 +444,17 @@ h2 {
   margin-bottom: 200px;
 }
 .pricing-item .pricing-value {
-  font-size: 32px;
+  font-size: 64px;
   font-weight: bold;
   color: #FFFFFF;
   line-height: 1em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .pricing-item .btn {
   background: transparent;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
-  padding: 15px 30px;
+  padding: 20px 30px;
   font-size: 16px;
   font-weight: 500;
   border-radius: 5px;
