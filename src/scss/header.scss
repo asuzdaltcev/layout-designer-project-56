@@ -4,7 +4,13 @@
 // Контейнер для ограничения ширины
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 20px;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    margin: 0 auto;
+  }
 }
 
 // Шапка сайта
