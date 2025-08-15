@@ -43,6 +43,15 @@ body {
   padding: 0 20px;
 }
 
+// На разрешении от 1240px и выше
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
 // Медиа-запрос для мобильных устройств (414px - ширина для тестов)
 @media (max-width: 414px) {
   .container {
