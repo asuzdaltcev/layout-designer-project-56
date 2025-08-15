@@ -464,9 +464,10 @@ h2 {
   font-size: 32px;
 }
 .pricing-item .btn {
+  height: 66px;
   background: transparent;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: solid #FFFFFF;
   padding: 20px 30px;
   font-size: 16px;
   font-weight: 500;
