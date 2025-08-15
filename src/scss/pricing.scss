@@ -1,0 +1,150 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+// Секция подписки
+.pricing {
+  padding-top: 100px;
+  background: $color-black;
+}
+
+.pricing-title {
+  font-size: $h2-desktop-font-size;
+  line-height: $h2-desktop-line-height;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.pricing-item {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-family: $font-family-roboto;
+    font-weight: $font-weight-normal;
+    font-size: $h3-desktop-font-size;
+    line-height: $h3-desktop-line-height;
+    letter-spacing: $letter-spacing-0;
+    color: $color-white;
+    margin-bottom: 200px;
+  }
+
+  .pricing-value {
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    background: transparent;
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 64px;
+
+    &:hover {
+      background: $color-white;
+      color: $color-black;
+    }
+  }
+
+  .pricing-footer {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $color-white;
+    text-align: center;
+    opacity: 0.8;
+  }
+}
+
+// Фоновые изображения для карточек
+.bg-free {
+  background-image: url('../images/subscribe_1.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standard {
+  background-image: url('../images/subscribe_2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url('../images/subscribe_3.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-disclaimer {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-white;
+  text-align: center;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+
+// Медиа-запрос для мобильных устройств
+@media (max-width: 414px) {
+  .pricing {
+    padding-top: 60px;
+  }
+
+  .pricing-title {
+    font-size: $h2-mobile-font-size;
+    line-height: $h2-mobile-line-height;
+    margin-bottom: 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-item {
+    min-height: 350px;
+    padding: 1rem;
+
+    h3 {
+      font-size: $h3-mobile-font-size;
+      line-height: $h3-mobile-line-height;
+      margin-bottom: 150px;
+    }
+
+    .pricing-value {
+      font-size: 28px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 14px;
+    }
+  }
+}

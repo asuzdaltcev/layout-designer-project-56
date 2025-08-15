@@ -1,0 +1,111 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+// Секция мобильного приложения
+.mobile-app {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: $color-black;
+}
+
+.mobile-app-title {
+  font-size: $h2-desktop-font-size;
+  line-height: $h2-desktop-line-height;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.mobile-app-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.mobile-app-text {
+  flex: 1;
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: $color-white;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  .btn {
+    background: $color-red;
+    color: $color-white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 12.8px;
+    font-weight: 500;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      background: color.adjust($color-red, $lightness: 10%);
+    }
+  }
+}
+
+.mobile-app-phones {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .phone {
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  }
+}
+
+// Медиа-запрос для мобильных устройств
+@media (max-width: 414px) {
+  .mobile-app {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .mobile-app-title {
+    font-size: $h2-mobile-font-size;
+    line-height: $h2-mobile-line-height;
+    margin-bottom: 30px;
+  }
+
+  .mobile-app-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mobile-app-text {
+    max-width: 100%;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 12px;
+    }
+  }
+
+  .mobile-app-phones {
+    .phone {
+      width: 150px;
+      height: 260px;
+    }
+  }
+}

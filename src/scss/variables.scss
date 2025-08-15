@@ -11,6 +11,7 @@ $color-dark-gray: #CACACA;
 $color-purple: #5328A1;
 $color-dark: #3C3B3D;
 $color-red: #95390C;
+$color-white: #FFFFFF;
 
 // Шрифты
 $font-family: 'Roboto', sans-serif;
@@ -21,12 +22,24 @@ $h1-desktop-font-size: 60px;
 $h1-desktop-line-height: 90px;
 $h2-desktop-font-size: 38px;
 $h2-desktop-line-height: 57px;
+$h3-desktop-font-size: 24px;
+$h3-desktop-line-height: 45px;
 
 // Размеры заголовков для мобильных устройств
 $h1-mobile-font-size: 30px;
 $h1-mobile-line-height: 45px;
 $h2-mobile-font-size: 18px;
 $h2-mobile-line-height: 27px;
+$h3-mobile-font-size: 20px;
+$h3-mobile-line-height: 30px;
 
 // Насыщенность шрифта
 $font-weight-bold: bold;
+
+// Константы для шрифта
+$font-family-roboto: 'Roboto', sans-serif;
+$font-weight-normal: 400;
+$font-small: 11px;
+$line-height-150: 150%;
+$letter-spacing-0: 0%;
+$text-transform-uppercase: uppercase;
