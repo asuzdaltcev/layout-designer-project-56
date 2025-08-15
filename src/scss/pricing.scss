@@ -16,7 +16,7 @@
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 50px;
   margin-bottom: 32px;
 }
 
@@ -42,7 +42,7 @@
   }
 
   .pricing-value {
-    font-size: 64px;
+    font-size: 54px;
     font-weight: $font-weight-bold;
     color: $color-white;
     line-height: 1em;

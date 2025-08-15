@@ -430,7 +430,7 @@ h2 {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 50px;
   margin-bottom: 32px;
 }
 
@@ -455,7 +455,7 @@ h2 {
   margin-bottom: 200px;
 }
 .pricing-item .pricing-value {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: bold;
   color: #FFFFFF;
   line-height: 1em;
