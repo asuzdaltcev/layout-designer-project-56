@@ -455,11 +455,13 @@ h2 {
   padding-top: 24px;
 }
 .pricing-item .pricing-value {
-  font-size: 54px;
-  font-weight: bold;
+  font-size: 64px;
   color: #FFFFFF;
   line-height: 1em;
-  margin-bottom: 40px;
+  padding-bottom: 25px;
+}
+.pricing-item .pricing-value sup {
+  font-size: 32px;
 }
 .pricing-item .btn {
   background: transparent;
@@ -474,7 +476,6 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  margin-top: 7px;
 }
 .pricing-item .btn:hover {
   background: #FFFFFF;

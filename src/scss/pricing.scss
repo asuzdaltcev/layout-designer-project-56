@@ -42,11 +42,14 @@
   }
 
   .pricing-value {
-    font-size: 54px;
-    font-weight: $font-weight-bold;
+    font-size: 64px;
     color: $color-white;
     line-height: 1em;
-    margin-bottom: 40px;
+    padding-bottom: 25px;
+  }
+
+  .pricing-value sup {
+    font-size: 32px;
   }
 
   .btn {
@@ -62,7 +65,6 @@
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    margin-top: 7px;
 
     &:hover {
       background: $color-white;
