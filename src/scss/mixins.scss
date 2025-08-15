@@ -1,0 +1,111 @@
+@use 'variables' as *;
+
+// Миксин для заголовков секций
+@mixin section-title {
+  font-size: $h2-desktop-font-size;
+  line-height: $h2-desktop-line-height;
+  font-weight: bold;
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: $section-margin-bottom;
+}
+
+// Миксин для заголовков секций на мобильных
+@mixin section-title-mobile {
+  font-size: $h2-mobile-font-size;
+  line-height: $h2-mobile-line-height;
+  margin-bottom: 30px;
+}
+
+// Миксин для стандартного текста
+@mixin standard-text {
+  font-size: $font-size-16;
+  line-height: $line-height-24;
+  color: $color-white;
+}
+
+// Миксин для заголовков h3
+@mixin h3-title {
+  font-size: $font-size-18;
+  line-height: $line-height-27;
+  font-weight: bold;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+// Миксин для заголовков h3 на мобильных
+@mixin h3-title-mobile {
+  font-size: $font-size-16;
+  line-height: $line-height-24;
+}
+
+// Миксин для стандартной секции
+@mixin section-base {
+  padding-top: $section-padding-top;
+}
+
+// Миксин для сетки 4 столбца
+@mixin grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $grid-gap-horizontal $grid-gap-horizontal;
+  row-gap: $grid-gap-vertical;
+}
+
+// Миксин для сетки 3 столбца
+@mixin grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $grid-gap-horizontal $grid-gap-horizontal;
+  row-gap: $grid-gap-vertical;
+}
+
+// Миксин для сетки 2 столбца
+@mixin grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $grid-gap-horizontal $grid-gap-horizontal;
+  row-gap: $grid-gap-vertical;
+}
+
+// Миксин для круглого изображения
+@mixin circular-image($size: $image-size-250) {
+  width: $size;
+  height: $size;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Миксин для стандартного изображения
+@mixin standard-image($size: $image-size-250) {
+  width: $size;
+  height: $size;
+  object-fit: cover;
+  border-radius: $border-radius-8;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Миксин для центрированного элемента
+@mixin centered-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+// Миксин для мобильной адаптации
+@mixin mobile-section {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,20 +1,16 @@
 @use 'variables' as *;
 @use 'sass:color';
+@use 'mixins' as *;
 
 // Секция новостей
 .news {
-  padding-top: 100px;
+  @include section-base;
   background: $color-black;
 }
 
 .news-title {
-  font-size: $h2-desktop-font-size;
-  line-height: $h2-desktop-line-height;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-  color: $color-white;
+  @include section-title;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .news-grid {

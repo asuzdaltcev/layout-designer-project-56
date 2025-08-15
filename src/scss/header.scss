@@ -20,12 +20,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 .logo-icon {
@@ -55,7 +67,7 @@
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 40px;
+  gap: 24px;
   margin: 0;
   padding: 0;
 }
@@ -112,6 +124,15 @@
   .nav {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .nav-left {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    justify-content: center;
   }
 
   .nav-list {

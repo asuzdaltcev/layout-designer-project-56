@@ -1,86 +1,58 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .discography {
-  padding-top: 100px;
+  @include section-base;
   
   .discography-title {
-    font-size: $h2-desktop-font-size;
-    line-height: $h2-desktop-line-height;
-    font-weight: bold;
-    color: $color-white;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+    @include section-title;
   }
   
   .discography-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px 50px;
-    row-gap: 25px;
+    @include grid-4-columns;
   }
   
   .discography-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @include centered-item;
     
     .discography-image {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease;
-      
-      &:hover {
-        transform: scale(1.05);
-      }
+      @include standard-image;
     }
     
     .discography-info {
       .discography-title {
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: bold;
-        color: $color-white;
+        @include h3-title;
         margin-bottom: 8px;
         text-transform: none;
       }
       
       .discography-year {
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-white;
+        @include standard-text;
         opacity: 0.7;
       }
     }
   }
   
   @media (max-width: 414px) {
-    padding-top: 50px;
+    @include mobile-section;
     
     .discography-title {
-      font-size: $h2-mobile-font-size;
-      line-height: $h2-mobile-line-height;
-      margin-bottom: 30px;
+      @include section-title-mobile;
     }
     
     .discography-grid {
       grid-template-columns: 1fr;
-      gap: 25px;
+      gap: $grid-gap-vertical;
     }
     
     .discography-item {
       .discography-image {
-        width: 200px;
-        height: 200px;
+        @include standard-image($image-size-200);
       }
       
       .discography-info {
         .discography-title {
-          font-size: 16px;
-          line-height: 24px;
+          @include h3-title-mobile;
         }
         
         .discography-year {
