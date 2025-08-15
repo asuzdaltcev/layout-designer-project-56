@@ -568,15 +568,13 @@ h2 {
 .news-grid {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 65px;
 }
 
 .news-item {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: flex-start;
-  padding: 30px;
-  background: #3C3B3D;
   border-radius: 10px;
 }
 .news-item img {
@@ -600,7 +598,7 @@ h2 {
   font-size: 30px;
   line-height: 45px;
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .news-item .news-body p {
   font-size: 16px;
@@ -621,13 +619,13 @@ h2 {
   gap: 10px;
 }
 .news-item .news-footer .news-author .author-avatar {
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
   border-radius: 50%;
 }
 .news-item .news-footer .news-author .author-name {
-  font-size: 14px;
-  color: #FFFFFF;
+  font-size: 12px;
+  color: #F89202;
   font-weight: 500;
 }
 .news-item .news-footer .news-author .news-date {
