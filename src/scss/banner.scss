@@ -123,6 +123,19 @@
 
   .form-input {
     min-width: auto;
+    font-family: $font-family-roboto;
+    font-weight: $font-weight-700;
+    font-size: $font-size-14;
+    line-height: $line-height-100;
+    letter-spacing: $letter-spacing-0;
+    
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-weight: $font-weight-700;
+      font-size: $font-size-14;
+      line-height: $line-height-100;
+      letter-spacing: $letter-spacing-0;
+    }
   }
 
   .banner-button {
