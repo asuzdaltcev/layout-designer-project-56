@@ -1,18 +1,6 @@
 @use 'variables' as *;
 @use 'sass:color';
 
-// Контейнер для ограничения ширины
-.container {
-  max-width: 1200px;
-  margin: 0 20px;
-}
-
-@media (min-width: 1240px) {
-  .container {
-    margin: 0 auto;
-  }
-}
-
 // Шапка сайта
 .header {
   position: absolute;
@@ -127,9 +115,6 @@
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
-  .container {
-    padding: 0 20px;
-  }
   
   .header {
     top: 15px;

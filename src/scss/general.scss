@@ -36,6 +36,21 @@ body {
   background-color: $bg-color;
 }
 
+// Контейнер для ограничения ширины
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Медиа-запрос для мобильных устройств (414px - ширина для тестов)
+@media (max-width: 414px) {
+  .container {
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
 // Стили заголовков для десктопа
 h1 {
   font-size: $h1-desktop-font-size;
