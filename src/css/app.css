@@ -435,7 +435,7 @@ h2 {
 }
 
 .pricing-item {
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   border-radius: 1rem;
   text-align: center;
   position: relative;
@@ -452,6 +452,7 @@ h2 {
   letter-spacing: 0%;
   color: #FFFFFF;
   margin-bottom: 200px;
+  padding-top: 24px;
 }
 .pricing-item .pricing-value {
   font-size: 54px;
@@ -481,7 +482,7 @@ h2 {
 }
 .pricing-item .pricing-footer {
   padding-top: 64px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   font-size: 13px;
   line-height: 1.5;
   color: #FFFFFF;
