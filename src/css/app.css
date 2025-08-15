@@ -431,7 +431,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .pricing-item {
@@ -474,14 +474,15 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 64px;
 }
 .pricing-item .btn:hover {
   background: #FFFFFF;
   color: #08020D;
 }
 .pricing-item .pricing-footer {
-  font-size: 14px;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  font-size: 13px;
   line-height: 1.5;
   color: #FFFFFF;
   text-align: center;

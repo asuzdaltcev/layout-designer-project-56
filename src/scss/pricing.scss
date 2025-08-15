@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .pricing-item {
@@ -62,7 +62,6 @@
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 64px;
 
     &:hover {
       background: $color-white;
@@ -71,7 +70,9 @@
   }
 
   .pricing-footer {
-    font-size: 14px;
+    padding-top: 64px;
+    padding-bottom: 40px;
+    font-size: 13px;
     line-height: 1.5;
     color: $color-white;
     text-align: center;
