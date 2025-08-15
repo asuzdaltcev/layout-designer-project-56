@@ -711,7 +711,6 @@ h2 {
 
 .mobile-app-content {
   display: flex;
-  align-items: center;
   gap: 60px;
 }
 
@@ -720,9 +719,9 @@ h2 {
 }
 .mobile-app-text p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .mobile-app-text p:last-of-type {
   margin-bottom: 30px;

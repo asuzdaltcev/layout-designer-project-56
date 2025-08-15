@@ -16,7 +16,6 @@
 
 .mobile-app-content {
   display: flex;
-  align-items: center;
   gap: 60px;
 }
 
@@ -25,9 +24,9 @@
 
   p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: $color-white;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     &:last-of-type {
       margin-bottom: 30px;
