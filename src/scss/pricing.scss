@@ -35,7 +35,6 @@
     font-family: $font-family-roboto;
     font-weight: $font-weight-normal;
     font-size: $h3-desktop-font-size;
-    line-height: $h3-desktop-line-height;
     letter-spacing: $letter-spacing-0;
     color: $color-white;
     margin-bottom: 200px;
@@ -62,6 +61,7 @@
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+    margin-top: 7px;
 
     &:hover {
       background: $color-white;
@@ -106,6 +106,7 @@
   text-align: center;
   opacity: 0.8;
   margin: 0 auto;
+  padding-top: 6px;
 }
 
 // Медиа-запрос для мобильных устройств

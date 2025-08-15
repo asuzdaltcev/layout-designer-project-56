@@ -449,7 +449,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 45px;
   letter-spacing: 0%;
   color: #FFFFFF;
   margin-bottom: 200px;
@@ -474,6 +473,7 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
+  margin-top: 7px;
 }
 .pricing-item .btn:hover {
   background: #FFFFFF;
@@ -514,6 +514,7 @@ h2 {
   text-align: center;
   opacity: 0.8;
   margin: 0 auto;
+  padding-top: 6px;
 }
 
 @media (max-width: 414px) {
