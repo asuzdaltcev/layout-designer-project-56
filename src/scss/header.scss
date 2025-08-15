@@ -92,6 +92,11 @@
   flex-shrink: 0;
 }
 
+// Скрываем мобильный поиск на десктопе
+.search-mobile {
+  display: none;
+}
+
 .search-input {
   background: $color-dark;
   border: none;
@@ -116,6 +121,10 @@
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
+  .container {
+    padding: 0 20px;
+  }
+  
   .header {
     top: 15px;
     padding: 10px 0;
@@ -123,22 +132,59 @@
 
   .nav {
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
   }
 
   .nav-left {
     flex-direction: column;
-    gap: 15px;
+    align-items: normal;
+    padding-bottom: 18px;
+    gap: 3px;
+    width: 100%;
+  }
+
+  .nav-left .logo {
+    padding-bottom: 8px;
   }
 
   .nav-menu {
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  // Скрываем основной поиск на мобильных
+  .search {
+    display: none;
+  }
+
+  // Показываем мобильный поиск
+  .search-mobile {
+    display: block;
+    width: 100%;
+    
+    .search-input {
+      width: 100%;
+    }
   }
 
   .nav-list {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: normal;
+    
+    li {
+      line-height: 1;
+      height: auto;
+    }
+  }
+
+  .nav-link {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
   }
 
   .search-input {

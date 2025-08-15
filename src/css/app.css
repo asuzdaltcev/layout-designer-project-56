@@ -141,6 +141,10 @@ h2 {
   flex-shrink: 0;
 }
 
+.search-mobile {
+  display: none;
+}
+
 .search-input {
   background: #3C3B3D;
   border: none;
@@ -160,25 +164,57 @@ h2 {
 }
 
 @media (max-width: 414px) {
+  .container {
+    padding: 0 20px;
+  }
   .header {
     top: 15px;
     padding: 10px 0;
   }
   .nav {
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
   }
   .nav-left {
     flex-direction: column;
-    gap: 15px;
+    align-items: normal;
+    padding-bottom: 18px;
+    gap: 3px;
+    width: 100%;
+  }
+  .nav-left .logo {
+    padding-bottom: 8px;
   }
   .nav-menu {
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .search {
+    display: none;
+  }
+  .search-mobile {
+    display: block;
+    width: 100%;
+  }
+  .search-mobile .search-input {
+    width: 100%;
   }
   .nav-list {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: normal;
+  }
+  .nav-list li {
+    line-height: 1;
+    height: auto;
+  }
+  .nav-link {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
   }
   .search-input {
     width: 200px;
@@ -274,7 +310,7 @@ h2 {
 
 @media (max-width: 414px) {
   .banner {
-    padding: 150px 0 80px;
+    padding: 250px 0 205px;
   }
   .banner-title {
     font-size: 30px;
@@ -283,6 +319,7 @@ h2 {
   .banner-subtitle {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 16px;
   }
   .banner-text {
     font-size: 16px;
@@ -290,7 +327,7 @@ h2 {
   }
   .form-row {
     flex-direction: column;
-    gap: 15px;
+    gap: 22px;
   }
   .form-input {
     min-width: auto;
