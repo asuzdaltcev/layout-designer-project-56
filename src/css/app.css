@@ -64,7 +64,6 @@ h2 {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 15px 0;
 }
 
 .nav {
@@ -652,6 +651,490 @@ h2 {
   .mobile-app-phones .phone {
     width: 150px;
     height: 260px;
+  }
+}
+.footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer-main {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-column h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer-column ul li a:hover {
+  opacity: 1;
+}
+.footer-column ul li:not(:has(a)) {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.footer-column .social-icons {
+  display: flex;
+  gap: 15px;
+}
+.footer-column .social-icons .social-icon {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer-column .social-icons .social-icon:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  padding: 2rem 0;
+  position: relative;
+}
+.footer-bottom .footer-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.footer-bottom .footer-nav a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.footer-bottom .footer-nav a:hover {
+  opacity: 1;
+}
+
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background: #CACACA;
+}
+
+@media (max-width: 414px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 2rem 0;
+  }
+  .footer-column {
+    text-align: center;
+  }
+  .footer-column h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  .footer-column .social-icons {
+    justify-content: center;
+  }
+  .footer-bottom {
+    padding: 1.5rem 0;
+  }
+  .footer-bottom .footer-nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+.artist-banner {
+  background-image: url("../images/MortenHarket.png");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0 200px;
+  position: relative;
+}
+
+.artist-content {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+
+.artist-info {
+  max-width: 500px;
+  z-index: 2;
+  position: relative;
+}
+.artist-info .artist-name {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.artist-info .artist-followers {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+.artist-info .artist-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.artist-info .artist-buttons .btn {
+  width: 200px;
+  padding: 20px 30px;
+  font-size: 12.8px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.artist-info .artist-buttons .btn .btn-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.artist-info .artist-buttons .btn.btn-mix {
+  background: #5328A1;
+  color: #FFFFFF;
+}
+.artist-info .artist-buttons .btn.btn-mix:hover {
+  background: rgb(104.0597014925, 50.1492537313, 201.8507462687);
+}
+.artist-info .artist-buttons .btn.btn-favorite {
+  background: #95390C;
+  color: #FFFFFF;
+}
+.artist-info .artist-buttons .btn.btn-favorite:hover {
+  background: rgb(196.198757764, 75.0559006211, 15.801242236);
+}
+
+@media (max-width: 414px) {
+  .artist-banner {
+    padding: 150px 0 150px;
+    min-height: 80vh;
+  }
+  .artist-content {
+    min-height: 300px;
+  }
+  .artist-info {
+    max-width: 100%;
+    text-align: center;
+  }
+  .artist-info .artist-name {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+  .artist-info .artist-followers {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .artist-info .artist-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .artist-info .artist-buttons .btn {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 12px;
+  }
+}
+.popular-tracks {
+  padding-top: 100px;
+  background: #08020D;
+}
+
+.popular-tracks-title {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 50px;
+  row-gap: 25px;
+}
+
+.popular-track {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #3C3B3D;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.popular-track:hover {
+  background: rgb(72.75, 71.5375, 73.9625);
+}
+.popular-track .track-image {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.popular-track .track-info {
+  flex: 1;
+  min-width: 0;
+}
+.popular-track .track-info .track-title {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.popular-track .track-info .track-artist {
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.popular-track .track-duration {
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-weight: normal;
+  flex-shrink: 0;
+}
+
+@media (max-width: 414px) {
+  .popular-tracks {
+    padding-top: 60px;
+  }
+  .popular-tracks-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .popular-track {
+    padding: 12px;
+  }
+  .popular-track .track-image {
+    width: 50px;
+    height: 50px;
+  }
+  .popular-track .track-info .track-title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .popular-track .track-info .track-artist {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+.discography {
+  padding-top: 100px;
+}
+.discography .discography-title {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.discography .discography-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 50px;
+  row-gap: 25px;
+}
+.discography .discography-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.discography .discography-item .discography-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.discography .discography-item .discography-image:hover {
+  transform: scale(1.05);
+}
+.discography .discography-item .discography-info .discography-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  text-transform: none;
+}
+.discography .discography-item .discography-info .discography-year {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+@media (max-width: 414px) {
+  .discography {
+    padding-top: 50px;
+  }
+  .discography .discography-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .discography .discography-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .discography .discography-item .discography-image {
+    width: 200px;
+    height: 200px;
+  }
+  .discography .discography-item .discography-info .discography-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .discography .discography-item .discography-info .discography-year {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.similar-artists {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.similar-artists .similar-artists-title {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.similar-artists .similar-artists-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 50px;
+  row-gap: 25px;
+}
+.similar-artists .similar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.similar-artists .similar-item .similar-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.similar-artists .similar-item .similar-image:hover {
+  transform: scale(1.05);
+}
+.similar-artists .similar-item .similar-info .similar-name {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.similar-artists .similar-item .similar-info .similar-followers {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+@media (max-width: 414px) {
+  .similar-artists {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .similar-artists .similar-artists-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .similar-artists .similar-artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .similar-artists .similar-item .similar-image {
+    width: 150px;
+    height: 150px;
+  }
+  .similar-artists .similar-item .similar-info .similar-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .similar-artists .similar-item .similar-info .similar-followers {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 

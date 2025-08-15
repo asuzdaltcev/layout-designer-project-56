@@ -1,0 +1,122 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+// Секция популярных треков
+.popular-tracks {
+  padding-top: 100px;
+  background: $color-black;
+}
+
+.popular-tracks-title {
+  font-size: $h2-desktop-font-size;
+  line-height: $h2-desktop-line-height;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 50px;
+  row-gap: 25px;
+}
+
+.popular-track {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: $color-dark;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: color.adjust($color-dark, $lightness: 5%);
+  }
+
+  .track-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+
+  .track-info {
+    flex: 1;
+    min-width: 0;
+
+    .track-title {
+      font-size: 12.8px;
+      line-height: 19.2px;
+      font-weight: bold;
+      color: $color-white;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-artist {
+      font-size: 12px;
+      line-height: 18px;
+      color: $color-white;
+      opacity: 0.7;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .track-duration {
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-white;
+    opacity: 0.6;
+    font-weight: normal;
+    flex-shrink: 0;
+  }
+}
+
+// Медиа-запрос для мобильных устройств
+@media (max-width: 414px) {
+  .popular-tracks {
+    padding-top: 60px;
+  }
+
+  .popular-tracks-title {
+    font-size: $h2-mobile-font-size;
+    line-height: $h2-mobile-line-height;
+    margin-bottom: 30px;
+  }
+
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .popular-track {
+    padding: 12px;
+
+    .track-image {
+      width: 50px;
+      height: 50px;
+    }
+
+    .track-info {
+      .track-title {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      .track-artist {
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+  }
+}
