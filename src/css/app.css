@@ -25,7 +25,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  color: #cacaca;
+  color: #FFFFFF;
   background-color: #08020d;
 }
 
@@ -156,7 +156,7 @@ h2 {
   outline: none;
 }
 .search-input::placeholder {
-  color: #cacaca;
+  color: #FFFFFF;
   opacity: 0.6;
 }
 .search-input:focus {
@@ -240,7 +240,7 @@ h2 {
   line-height: 90px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #cacaca;
+  color: #FFFFFF;
 }
 
 .banner-subtitle {
@@ -248,14 +248,14 @@ h2 {
   line-height: 57px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #cacaca;
+  color: #FFFFFF;
   margin-bottom: 32px;
 }
 
 .banner-text {
   font-size: 16px;
   line-height: 24px;
-  color: #cacaca;
+  color: #FFFFFF;
   opacity: 0.8;
 }
 
@@ -275,15 +275,15 @@ h2 {
   min-width: 270px;
   min-height: 50px;
   padding-left: 20px;
-  border: 2px solid #cacaca;
+  border: 2px solid #FFFFFF;
   border-radius: 3px;
   background: transparent;
-  color: #cacaca;
+  color: #FFFFFF;
   font-size: 16px;
   outline: none;
 }
 .form-input::placeholder {
-  color: #cacaca;
+  color: #FFFFFF;
   opacity: 0.7;
 }
 .form-input:focus {
@@ -310,7 +310,7 @@ h2 {
 
 @media (max-width: 414px) {
   .banner {
-    padding: 250px 0 205px;
+    padding: 248px 0 200px;
   }
   .banner-title {
     font-size: 30px;
@@ -327,7 +327,7 @@ h2 {
   }
   .form-row {
     flex-direction: column;
-    gap: 22px;
+    gap: 27px;
   }
   .form-input {
     min-width: auto;
