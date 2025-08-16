@@ -3,13 +3,16 @@
 // Футер
 .footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  width: 100%;
 }
 
 .footer-main {
-  padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  padding: 3em 0 3em 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .footer-column {
@@ -19,16 +22,16 @@
     font-weight: bold;
     text-transform: uppercase;
     color: $color-white;
-    margin-bottom: 20px;
+    margin: 15px 0;
   }
 
   ul {
     list-style: none;
-    margin: 0;
+    margin: 16px 0;
     padding: 0;
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 0;
 
       a {
         font-size: 16px;
@@ -57,7 +60,7 @@
 
   .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 24px;
 
     .social-icon {
       font-size: 16px;
@@ -71,18 +74,28 @@
       &:hover {
         opacity: 1;
       }
+
+      .social-icon-img {
+        filter: brightness(0) invert(1); // Делаем иконку белой
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover .social-icon-img {
+        opacity: 1;
+      }
     }
   }
 }
 
 .footer-bottom {
-  padding: 2rem 0;
   position: relative;
+  padding: 3em 0 3em 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   .footer-nav {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap: 16px;
 
     a {
       font-size: 16px;
@@ -104,7 +117,7 @@
 .footer-bottom::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
@@ -117,7 +130,7 @@
   .footer-main {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding: 2rem 0;
+    padding: 2em 0; // Используем em вместо rem
   }
 
   .footer-column {
@@ -139,7 +152,7 @@
   }
 
   .footer-bottom {
-    padding: 1.5rem 0;
+    padding: 1.5em 0; // Используем em вместо rem
 
     .footer-nav {
       flex-direction: column;
