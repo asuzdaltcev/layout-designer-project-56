@@ -27,8 +27,6 @@
 
 .popular-tracks-title {
   @include section-title;
-  margin-bottom: 0;
-  padding-bottom: 50px;
 }
 
 .track-columns {
@@ -99,8 +97,6 @@
 
   .popular-tracks-title {
     @include section-title-mobile;
-    margin-bottom: 0;
-    padding-bottom: 30px;
   }
 
   .track-columns {

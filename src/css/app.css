@@ -419,6 +419,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -557,6 +558,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -710,6 +712,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -1045,8 +1048,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .track-columns {
@@ -1110,8 +1112,7 @@ h2 {
   .popular-tracks-title {
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .track-columns {
     grid-template-columns: 1fr;
@@ -1142,6 +1143,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .discography .discography-grid {
   display: grid;
@@ -1189,6 +1191,7 @@ h2 {
   .discography .discography-title {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 30px;
   }
   .discography .discography-grid {
     grid-template-columns: 1fr;
@@ -1225,6 +1228,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .similar-artists .similar-artists-grid {
   display: grid;
@@ -1271,6 +1275,7 @@ h2 {
   .similar-artists .similar-artists-title {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 30px;
   }
   .similar-artists .similar-artists-grid {
     display: grid;
