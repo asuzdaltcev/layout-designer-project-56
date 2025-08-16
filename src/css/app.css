@@ -178,10 +178,6 @@ h2 {
 }
 
 @media (max-width: 414px) {
-  .header {
-    top: 15px;
-    padding: 10px 0;
-  }
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -372,7 +368,7 @@ h2 {
 
 @media (max-width: 414px) {
   .banner {
-    padding: 249px 0 200px;
+    padding: 249px 20px 200px 20px;
   }
   .banner-title {
     font-size: 30px;
@@ -521,33 +517,34 @@ h2 {
 }
 
 @media (max-width: 414px) {
-  .pricing {
-    padding-top: 60px;
-  }
   .pricing-title {
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .pricing-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 50px;
   }
   .pricing-item {
     min-height: 350px;
     padding: 1rem;
   }
   .pricing-item h3 {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 150px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 0;
+    margin-bottom: 188px;
   }
   .pricing-item .pricing-value {
-    font-size: 28px;
+    padding-bottom: 37px;
   }
   .pricing-item .btn {
     padding: 12px 25px;
     font-size: 14px;
+  }
+  .pricing-item .pricing-footer {
+    padding-bottom: 47px;
   }
 }
 .news {

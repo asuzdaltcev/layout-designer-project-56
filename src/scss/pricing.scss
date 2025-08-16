@@ -115,38 +115,41 @@
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
-  .pricing {
-    padding-top: 60px;
-  }
-
   .pricing-title {
     font-size: $h2-mobile-font-size;
     line-height: $h2-mobile-line-height;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .pricing-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 50px;
   }
 
   .pricing-item {
+
     min-height: 350px;
     padding: 1rem;
 
     h3 {
       font-size: $h3-mobile-font-size;
       line-height: $h3-mobile-line-height;
-      margin-bottom: 150px;
+      padding-top: 0;
+      margin-bottom: 188px;
     }
 
     .pricing-value {
-      font-size: 28px;
+      padding-bottom: 37px;
     }
 
     .btn {
       padding: 12px 25px;
       font-size: 14px;
     }
+    
+    .pricing-footer {
+      padding-bottom: 47px;
+    }
   }
+
 }
