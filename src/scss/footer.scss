@@ -134,7 +134,7 @@
   }
 
   .footer-column {
-    text-align: center;
+    padding: 0 20px;
 
     h2 {
       font-size: 16px;
@@ -146,9 +146,6 @@
       margin-bottom: 8px;
     }
 
-    .social-icons {
-      justify-content: center;
-    }
   }
 
   .footer-bottom {
@@ -157,7 +154,7 @@
     .footer-nav {
       flex-direction: column;
       gap: 15px;
-      text-align: center;
+      padding: 0 20px;
     }
   }
 }

@@ -124,24 +124,18 @@
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
-  .news {
-    padding-top: 60px;
-  }
 
   .news-title {
     font-size: $h2-mobile-font-size;
     line-height: $h2-mobile-line-height;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 
   .news-item {
     flex-direction: column !important;
-    gap: 20px;
-    padding: 20px;
 
     img {
       width: 100%;
-      height: 200px;
     }
 
     .news-content {
@@ -150,14 +144,14 @@
 
     .news-body {
       h3 {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
       }
     }
 
     .news-footer {
       flex-direction: column;
-      gap: 15px;
       align-items: flex-start;
 
       .btn {

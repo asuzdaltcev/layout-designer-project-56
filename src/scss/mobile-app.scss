@@ -68,40 +68,25 @@
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 414px) {
-  .mobile-app {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   .mobile-app-title {
     font-size: $h2-mobile-font-size;
     line-height: $h2-mobile-line-height;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 
   .mobile-app-content {
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: column-reverse;
+    gap: 2px;
   }
 
   .mobile-app-text {
     max-width: 100%;
-    text-align: center;
 
     p {
-      font-size: 14px;
+      font-size: 16px;
     }
-
-    .btn {
-      padding: 12px 30px;
-      font-size: 12px;
-    }
+    
   }
 
-  .mobile-app-phones {
-    .phone {
-      width: 150px;
-      height: 260px;
-    }
-  }
 }
