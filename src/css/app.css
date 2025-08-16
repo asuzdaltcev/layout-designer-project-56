@@ -670,10 +670,16 @@ h2 {
   .news-item .news-content {
     min-height: auto;
   }
+  .news-item .news-body {
+    margin-bottom: 24px;
+  }
   .news-item .news-body h3 {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
+  }
+  .news-item .news-body p {
+    line-height: 1.5;
   }
   .news-item .news-footer {
     flex-direction: column;
@@ -682,6 +688,16 @@ h2 {
   .news-item .news-footer .btn {
     padding: 12px 25px;
     font-size: 14px;
+    height: 53px;
+  }
+  .news-item .news-footer .news-author {
+    gap: 16px;
+  }
+  .news-item .news-footer .news-author .news-date {
+    font-size: 12.8px;
+  }
+  .news-item .news-footer .news-body {
+    margin-bottom: 15px;
   }
 }
 .mobile-app {
