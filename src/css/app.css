@@ -963,6 +963,10 @@ h2 {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 200px;
+  white-space: nowrap;
 }
 .artist-info .artist-buttons .btn .btn-icon {
   width: 20px;
