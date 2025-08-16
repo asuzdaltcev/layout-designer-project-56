@@ -924,13 +924,12 @@ h2 {
 .artist-content {
   display: flex;
   align-items: center;
-  min-height: 400px;
 }
 
 .artist-info {
-  max-width: 500px;
   z-index: 2;
   position: relative;
+  padding-top: 50px;
 }
 .artist-info .artist-name {
   font-size: 60px;
@@ -938,13 +937,13 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .artist-info .artist-followers {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   opacity: 0.8;
 }
 .artist-info .artist-buttons {
@@ -963,8 +962,7 @@ h2 {
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 16px;
 }
 .artist-info .artist-buttons .btn .btn-icon {
   width: 20px;
