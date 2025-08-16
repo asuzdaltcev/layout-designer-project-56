@@ -712,7 +712,6 @@ h2 {
 .mobile-app-content {
   display: flex;
   gap: 60px;
-  padding-bottom: 4px;
 }
 
 .mobile-app-text {
@@ -723,7 +722,7 @@ h2 {
   line-height: 1.5;
   color: #CACACA;
   margin-bottom: 16px;
-  margin-top: 13px;
+  margin-top: 16px;
 }
 .mobile-app-text p:last-of-type {
   margin-bottom: 19px;

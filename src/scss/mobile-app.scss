@@ -17,7 +17,6 @@
 .mobile-app-content {
   display: flex;
   gap: 60px;
-  padding-bottom: 4px;
 }
 
 .mobile-app-text {
@@ -28,7 +27,7 @@
     line-height: 1.5;
     color: $color-dark-gray;
     margin-bottom: 16px;
-    margin-top: 13px;
+    margin-top: 16px;
 
     &:last-of-type {
       margin-bottom: 19px;
