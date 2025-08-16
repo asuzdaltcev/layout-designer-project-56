@@ -38,15 +38,17 @@ body {
 
 // Контейнер для ограничения ширины
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 // На разрешении от 1240px и выше
 @media (min-width: 1240px) {
   .container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
