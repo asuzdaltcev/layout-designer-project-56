@@ -922,14 +922,13 @@ h2 {
 }
 
 .artist-content {
-  display: flex;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .artist-info {
   z-index: 2;
   position: relative;
-  padding-top: 50px;
+  padding-top: 16px;
 }
 .artist-info .artist-name {
   font-size: 60px;
@@ -949,6 +948,7 @@ h2 {
 .artist-info .artist-buttons {
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 25px;
 }
 .artist-info .artist-buttons .btn {
   width: 200px;

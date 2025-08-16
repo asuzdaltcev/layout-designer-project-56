@@ -11,14 +11,13 @@
 }
 
 .artist-content {
-  display: flex;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .artist-info {
   z-index: 2;
   position: relative;
-  padding-top: 50px;
+  padding-top: 16px;
 
   .artist-name {
     font-size: $h1-desktop-font-size;
@@ -40,6 +39,7 @@
   .artist-buttons {
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 25px;
 
     .btn {
       width: 200px;
