@@ -38,6 +38,7 @@
 
   .artist-buttons {
     display: flex;
+    flex-direction: row;
     gap: 24px;
     padding-bottom: 25px;
 
