@@ -7,14 +7,12 @@
   font-weight: bold;
   color: $color-white;
   text-transform: uppercase;
-  margin-bottom: $section-margin-bottom;
 }
 
 // Миксин для заголовков секций на мобильных
 @mixin section-title-mobile {
   font-size: $h2-mobile-font-size;
   line-height: $h2-mobile-line-height;
-  margin-bottom: 30px;
 }
 
 // Миксин для стандартного текста

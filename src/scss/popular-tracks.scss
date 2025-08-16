@@ -2,6 +2,23 @@
 @use 'sass:color';
 @use 'mixins' as *;
 
+// Утилитарные классы
+.margin-0 {
+  margin-bottom: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.padding-left-20 {
+  padding-left: 20px;
+}
+
+.padding-right-35 {
+  padding-right: 35px;
+}
+
 // Секция популярных треков
 .popular-tracks {
   @include section-base;
@@ -10,40 +27,43 @@
 
 .popular-tracks-title {
   @include section-title;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
-.tracks-grid {
-  @include grid-2-columns;
+.track-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .popular-track {
   display: flex;
   align-items: center;
-  gap: 15px;
   transition: all 0.3s ease;
 
   &:hover {
     background: color.adjust($color-dark, $lightness: 5%);
   }
 
-  .track-image {
+  img {
     width: 55px;
     height: 55px;
     object-fit: cover;
     border-radius: 5px;
     flex-shrink: 0;
+    margin-right: 15px;
   }
 
   .track-info {
     flex: 1;
     min-width: 0;
 
-    .track-title {
+    .track-name {
       font-size: 12.8px;
       line-height: 19.2px;
       font-weight: bold;
       color: $color-white;
-      margin-bottom: 5px;
       text-transform: uppercase;
       white-space: nowrap;
       overflow: hidden;
@@ -61,7 +81,7 @@
     }
   }
 
-  .track-duration {
+  .track-time {
     font-size: 12px;
     line-height: 18px;
     color: $color-white;
@@ -79,9 +99,11 @@
 
   .popular-tracks-title {
     @include section-title-mobile;
+    margin-bottom: 0;
+    padding-bottom: 30px;
   }
 
-  .tracks-grid {
+  .track-columns {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -89,13 +111,13 @@
   .popular-track {
     padding: 12px;
 
-    .track-image {
+    img {
       width: 50px;
       height: 50px;
     }
 
     .track-info {
-      .track-title {
+      .track-name {
         font-size: 12px;
         line-height: 18px;
       }
