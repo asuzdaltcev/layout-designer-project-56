@@ -1296,10 +1296,6 @@ h2 {
   opacity: 0.7;
 }
 @media (max-width: 414px) {
-  .similar-artists {
-    padding-top: 50px;
-    margin-bottom: 50px;
-  }
   .similar-artists .similar-artists-title {
     font-size: 18px;
     line-height: 27px;
