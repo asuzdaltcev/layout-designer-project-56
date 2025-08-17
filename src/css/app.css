@@ -1184,19 +1184,17 @@ h2 {
   opacity: 0.7;
 }
 @media (max-width: 414px) {
-  .discography {
-    padding-top: 50px;
-    margin-bottom: 50px;
-  }
   .discography .discography-title {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 30px;
+    margin-bottom: 48px;
   }
   .discography .discography-grid {
-    grid-template-columns: 200px;
+    grid-template-columns: repeat(2, 137px);
     gap: 25px;
-    justify-content: center;
+    row-gap: 25px;
+    column-gap: 50px;
   }
   .discography .discography-image {
     width: 200px;
@@ -1205,6 +1203,8 @@ h2 {
     border-radius: 8px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    width: 137px;
+    height: 137px;
   }
   .discography .discography-image:hover {
     transform: scale(1.05);
@@ -1216,6 +1216,8 @@ h2 {
     border-radius: 8px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    width: 137px;
+    height: 137px;
   }
   .discography .discography-item .discography-image:hover {
     transform: scale(1.05);
@@ -1223,10 +1225,18 @@ h2 {
   .discography .discography-item .discography-info .discography-title {
     font-size: 16px;
     line-height: 24px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .discography .discography-item .discography-info .out-of-my-hands-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
   .discography .discography-item .discography-info .discography-year {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

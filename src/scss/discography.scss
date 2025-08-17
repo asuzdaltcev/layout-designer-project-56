@@ -40,35 +40,50 @@
   }
   
   @media (max-width: 414px) {
-    @include mobile-section;
     
     .discography-title {
       @include section-title-mobile;
+      margin-bottom: 48px;
     }
     
     .discography-grid {
-      grid-template-columns: 200px;
+      grid-template-columns: repeat(2, 137px);
       gap: $grid-gap-vertical;
-      justify-content: center;
+      row-gap: 25px;
+      column-gap: 50px;
     }
       
       .discography-image {
         @include standard-image($image-size-200);
+        width: 137px;
+        height: 137px;
       }
       
     .discography-item {
       .discography-image {
         @include standard-image($image-size-200);
+        width: 137px;
+        height: 137px;
       }
       
       .discography-info {
         .discography-title {
           @include h3-title-mobile;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        
+        // Специальные стили для заголовка "Out Of My Hands" в мобильной версии
+        .out-of-my-hands-title {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
         }
         
         .discography-year {
-          font-size: 14px;
-          line-height: 21px;
+          font-size: 16px;
+          line-height: 24px;
         }
       }
     }
