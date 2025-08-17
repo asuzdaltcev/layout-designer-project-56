@@ -6,8 +6,18 @@
   width: 100%;
 }
 
-// Базовые стили для ссылок в футере (должны идти первыми по специфичности)
+// Базовые стили для ссылок в футере (от менее специфичных к более специфичным)
 .footer-column ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: $color-white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-bottom .footer-nav a {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -19,16 +29,6 @@
 
 .footer-column ul li a:hover {
   opacity: 1;
-}
-
-.footer-bottom .footer-nav a {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  text-decoration: none;
-  color: $color-white;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
 }
 
 .footer-bottom .footer-nav a:hover {

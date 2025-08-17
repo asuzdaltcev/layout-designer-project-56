@@ -802,10 +802,6 @@ h2 {
   transition: opacity 0.3s ease;
 }
 
-.footer-column ul li a:hover {
-  opacity: 1;
-}
-
 .footer-bottom .footer-nav a {
   font-size: 16px;
   line-height: 24px;
@@ -814,6 +810,10 @@ h2 {
   color: #FFF;
   opacity: 0.8;
   transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 1;
 }
 
 .footer-bottom .footer-nav a:hover {
