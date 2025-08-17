@@ -282,7 +282,7 @@ h2 {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 0 200px;
+  padding: 200px 0;
   text-align: center;
   position: relative;
 }
@@ -366,9 +366,9 @@ h2 {
   background: rgb(41.1755102041, 152.8244897959, 93.4367346939);
 }
 
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .banner {
-    padding: 249px 20px 200px 20px;
+    padding: 249px 20px 200px;
   }
   .banner-title {
     font-size: 30px;
@@ -985,7 +985,6 @@ h2 {
   align-items: center;
   gap: 16px;
   flex: 0 0 200px;
-  width: 200px;
   max-width: 200px;
   white-space: nowrap;
 }
@@ -1010,7 +1009,7 @@ h2 {
   background: rgb(196.198757764, 75.0559006211, 15.801242236);
 }
 
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .artist-banner {
     padding: 175px 0 198px;
   }
@@ -1203,7 +1202,7 @@ h2 {
   color: #FFFFFF;
   opacity: 0.7;
 }
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .discography .discography-title {
     font-size: 18px;
     line-height: 27px;
@@ -1213,8 +1212,7 @@ h2 {
   .discography .discography-grid {
     grid-template-columns: repeat(2, 137px);
     gap: 25px;
-    row-gap: 25px;
-    column-gap: 50px;
+    gap: 25px 50px;
   }
   .discography .discography-image {
     width: 200px;

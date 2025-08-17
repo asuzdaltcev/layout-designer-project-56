@@ -39,8 +39,7 @@
     }
   }
   
-  @media (max-width: 414px) {
-    
+  @media (width <= 414px) {
     .discography-title {
       @include section-title-mobile;
       margin-bottom: 48px;
@@ -49,8 +48,7 @@
     .discography-grid {
       grid-template-columns: repeat(2, 137px);
       gap: $grid-gap-vertical;
-      row-gap: 25px;
-      column-gap: 50px;
+      gap: 25px 50px;
     }
       
       .discography-image {

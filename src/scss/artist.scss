@@ -56,7 +56,6 @@
       align-items: center;
       gap: 16px;
       flex: 0 0 200px;
-      width: 200px;
       max-width: 200px;
       white-space: nowrap;
 
@@ -89,7 +88,7 @@
 }
 
 // Медиа-запрос для мобильных устройств
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .artist-banner {
     padding: 175px 0 198px;
   }
