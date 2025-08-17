@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(4, 250px);
     gap: 50px;
-    row-gap: 25px;
+    row-gap: 26px;
   }
   
   .similar-item {
@@ -33,6 +33,7 @@
         @include h3-title;
         margin-bottom: 8px;
         margin-bottom: 0;
+        text-transform: none;
       }
       
       .similar-followers {
