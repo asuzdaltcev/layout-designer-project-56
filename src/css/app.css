@@ -1320,30 +1320,27 @@ h2 {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 30px;
+    margin-bottom: 48px;
   }
   .similar-artists .similar-artists-grid {
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 137px);
     gap: 25px;
-    row-gap: 25px;
+    row-gap: 28px;
+    column-gap: 50px;
   }
   .similar-artists .similar-item .similar-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  .similar-artists .similar-item .similar-image:hover {
-    transform: scale(1.05);
+    width: 137px;
+    height: 137px;
   }
   .similar-artists .similar-item .similar-info .similar-name {
     font-size: 16px;
     line-height: 24px;
+    font-size: 18px;
+    line-height: 27px;
   }
   .similar-artists .similar-item .similar-info .similar-followers {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
