@@ -6,6 +6,21 @@
   width: 100%;
 }
 
+// Базовые стили для ссылок в футере (должны идти первыми по специфичности)
+.footer-bottom .footer-nav a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: $color-white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-bottom .footer-nav a:hover {
+  opacity: 1;
+}
+
 .footer-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -96,20 +111,6 @@
   .footer-nav {
     display: flex;
     gap: 16px;
-
-    a {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: normal;
-      text-decoration: none;
-      color: $color-white;
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-    }
-
-    a:hover {
-      opacity: 1;
-    }
   }
 }
 
