@@ -546,6 +546,12 @@ h2 {
   .pricing-item .pricing-footer {
     padding-bottom: 47px;
   }
+  .pricing-item.bg-standard .pricing-footer {
+    padding-bottom: 69px;
+  }
+  .pricing-item.bg-premium .pricing-footer {
+    padding-bottom: 72px;
+  }
 }
 .news {
   padding-top: 100px;
@@ -897,12 +903,12 @@ h2 {
     padding: 0 20px;
   }
   .footer-column h2 {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
   }
   .footer-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   .footer-bottom {
     padding: 1.5em 0;

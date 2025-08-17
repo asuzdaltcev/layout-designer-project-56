@@ -151,5 +151,13 @@
       padding-bottom: 47px;
     }
   }
+  
+  // Специальный стиль только для pricing-footer в bg-standard
+  .pricing-item.bg-standard .pricing-footer {
+    padding-bottom: 69px;
+  }
 
+  .pricing-item.bg-premium .pricing-footer {
+    padding-bottom: 72px;
+  }
 }
