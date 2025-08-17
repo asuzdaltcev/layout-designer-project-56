@@ -1075,7 +1075,7 @@ h2 {
 
 .track-columns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 551px);
   row-gap: 25px;
   column-gap: 50px;
 }
