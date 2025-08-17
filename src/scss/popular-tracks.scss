@@ -27,6 +27,8 @@
 
 .popular-tracks-title {
   @include section-title;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .track-columns {

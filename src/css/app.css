@@ -1049,6 +1049,8 @@ h2 {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 50px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .track-columns {
