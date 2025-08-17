@@ -903,8 +903,10 @@ h2 {
 @media (max-width: 414px) {
   .footer-main {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0;
     padding: 2em 0;
+    padding-top: 46px;
+    padding-bottom: 56px;
   }
   .footer-column {
     padding: 0 20px;
@@ -917,12 +919,17 @@ h2 {
   .footer-column ul li {
     margin-bottom: 0;
   }
+  .footer-column .social-icons {
+    padding-top: 18px;
+  }
   .footer-bottom {
     padding: 1.5em 0;
+    padding-top: 49px;
+    padding-bottom: 47px;
   }
   .footer-bottom .footer-nav {
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
     padding: 0 20px;
   }
 }
