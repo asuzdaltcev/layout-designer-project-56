@@ -9,7 +9,10 @@
   }
   
   .discography-grid {
-    @include grid-4-columns;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 50px;
+    row-gap: 25px;
   }
   
   .discography-item {
@@ -22,7 +25,7 @@
     .discography-info {
       .discography-title {
         @include h3-title;
-        margin-bottom: 8px;
+        margin-bottom: 0;
         text-transform: none;
       }
       
@@ -41,10 +44,15 @@
     }
     
     .discography-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 200px;
       gap: $grid-gap-vertical;
+      justify-content: center;
     }
-    
+      
+      .discography-image {
+        @include standard-image($image-size-200);
+      }
+      
     .discography-item {
       .discography-image {
         @include standard-image($image-size-200);

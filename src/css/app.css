@@ -1150,8 +1150,8 @@ h2 {
 }
 .discography .discography-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px 50px;
+  grid-template-columns: repeat(4, 250px);
+  gap: 50px;
   row-gap: 25px;
 }
 .discography .discography-item {
@@ -1175,7 +1175,7 @@ h2 {
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   text-transform: none;
 }
 .discography .discography-item .discography-info .discography-year {
@@ -1195,8 +1195,20 @@ h2 {
     margin-bottom: 30px;
   }
   .discography .discography-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px;
     gap: 25px;
+    justify-content: center;
+  }
+  .discography .discography-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  .discography .discography-image:hover {
+    transform: scale(1.05);
   }
   .discography .discography-item .discography-image {
     width: 200px;
