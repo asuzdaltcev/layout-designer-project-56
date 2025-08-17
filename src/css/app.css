@@ -792,6 +792,20 @@ h2 {
   width: 100%;
 }
 
+.footer-column ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFF;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 1;
+}
+
 .footer-bottom .footer-nav a {
   font-size: 16px;
   line-height: 24px;
@@ -830,18 +844,6 @@ h2 {
 }
 .footer-column ul li {
   margin-bottom: 0;
-}
-.footer-column ul li a {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  text-decoration: none;
-  color: #FFF;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-.footer-column ul li a:hover {
-  opacity: 1;
 }
 .footer-column ul li:not(:has(a)) {
   font-size: 16px;
