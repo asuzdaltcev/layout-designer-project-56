@@ -992,8 +992,7 @@ h2 {
 
 @media (max-width: 414px) {
   .artist-banner {
-    padding: 150px 0 150px;
-    min-height: 80vh;
+    padding: 175px 0 198px;
   }
   .artist-content {
     min-height: 300px;
@@ -1008,17 +1007,19 @@ h2 {
     margin-bottom: 15px;
   }
   .artist-info .artist-followers {
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 49px;
+    text-align: left;
   }
   .artist-info .artist-buttons {
     flex-direction: column;
-    gap: 1rem;
   }
   .artist-info .artist-buttons .btn {
+    flex: none;
     width: 100%;
     padding: 15px 25px;
     font-size: 12px;
+    height: 62px;
   }
 }
 .margin-0 {
