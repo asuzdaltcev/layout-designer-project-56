@@ -155,6 +155,10 @@
   }
   
   // Специальный стиль только для pricing-footer в bg-standard
+  .pricing-item.bg-free {
+    background-position: unset;
+  }
+
   .pricing-item.bg-standard {
     background-position: unset;
   }
