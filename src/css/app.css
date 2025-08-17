@@ -1152,7 +1152,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   gap: 50px;
-  row-gap: 25px;
+  row-gap: 28px;
 }
 .discography .discography-item {
   display: flex;
@@ -1165,6 +1165,7 @@ h2 {
   border-radius: 8px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
+  border-radius: 0;
 }
 .discography .discography-item .discography-image:hover {
   transform: scale(1.05);

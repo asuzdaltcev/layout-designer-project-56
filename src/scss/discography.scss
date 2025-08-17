@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(4, 250px);
     gap: 50px;
-    row-gap: 25px;
+    row-gap: 28px;
   }
   
   .discography-item {
@@ -20,6 +20,7 @@
     
     .discography-image {
       @include standard-image;
+      border-radius: 0;
     }
     
     .discography-info {
