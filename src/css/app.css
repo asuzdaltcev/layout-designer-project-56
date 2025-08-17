@@ -1245,8 +1245,8 @@ h2 {
 }
 .similar-artists .similar-artists-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px 50px;
+  grid-template-columns: repeat(4, 250px);
+  gap: 50px;
   row-gap: 25px;
 }
 .similar-artists .similar-item {
@@ -1264,6 +1264,12 @@ h2 {
 .similar-artists .similar-item .similar-image:hover {
   transform: scale(1.05);
 }
+.similar-artists .similar-item .similar-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 .similar-artists .similar-item .similar-info .similar-name {
   font-size: 18px;
   line-height: 27px;
@@ -1271,6 +1277,7 @@ h2 {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 8px;
+  margin-bottom: 0;
 }
 .similar-artists .similar-item .similar-info .similar-followers {
   font-size: 16px;
@@ -1289,11 +1296,9 @@ h2 {
     margin-bottom: 30px;
   }
   .similar-artists .similar-artists-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px 50px;
-    row-gap: 25px;
+    grid-template-columns: repeat(2, 150px);
     gap: 25px;
+    row-gap: 25px;
   }
   .similar-artists .similar-item .similar-image {
     width: 150px;

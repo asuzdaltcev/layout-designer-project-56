@@ -10,7 +10,10 @@
   }
   
   .similar-artists-grid {
-    @include grid-4-columns;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 50px;
+    row-gap: 25px;
   }
   
   .similar-item {
@@ -21,9 +24,15 @@
     }
     
     .similar-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
       .similar-name {
         @include h3-title;
         margin-bottom: 8px;
+        margin-bottom: 0;
       }
       
       .similar-followers {
@@ -41,8 +50,9 @@
     }
     
     .similar-artists-grid {
-      @include grid-2-columns;
-      gap: $grid-gap-vertical;
+      grid-template-columns: repeat(2, 150px);
+      gap: 25px;
+      row-gap: 25px;
     }
     
     .similar-item {
