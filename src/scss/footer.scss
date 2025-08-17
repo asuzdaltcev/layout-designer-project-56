@@ -41,10 +41,10 @@
         color: $color-white;
         opacity: 0.8;
         transition: opacity 0.3s ease;
+      }
 
-        &:hover {
-          opacity: 1;
-        }
+      a:hover {
+        opacity: 1;
       }
 
       // Для контактов без ссылок
@@ -71,18 +71,18 @@
       opacity: 0.8;
       transition: opacity 0.3s ease;
 
-      &:hover {
-        opacity: 1;
-      }
-
       .social-icon-img {
         filter: brightness(0) invert(1); // Делаем иконку белой
         transition: opacity 0.3s ease;
       }
+    }
 
-      &:hover .social-icon-img {
-        opacity: 1;
-      }
+    .social-icon:hover {
+      opacity: 1;
+    }
+
+    .social-icon:hover .social-icon-img {
+      opacity: 1;
     }
   }
 }
@@ -105,10 +105,10 @@
       color: $color-white;
       opacity: 0.8;
       transition: opacity 0.3s ease;
+    }
 
-      &:hover {
-        opacity: 1;
-      }
+    a:hover {
+      opacity: 1;
     }
   }
 }

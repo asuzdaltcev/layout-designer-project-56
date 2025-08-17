@@ -115,7 +115,26 @@
 
 
 // Медиа-запрос для мобильных устройств
-@media (max-width: 414px) {
+@media (width <= 414px) {
+  .search-input {
+    width: 200px;
+    font-family: $font-family-arial;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-13-3;
+    line-height: $line-height-100;
+    letter-spacing: $letter-spacing-0;
+    text-transform: $text-transform-uppercase;
+  }
+
+  .search-input::placeholder {
+    font-family: $font-family-arial;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-13-3;
+    line-height: $line-height-100;
+    letter-spacing: $letter-spacing-0;
+    text-transform: $text-transform-uppercase;
+  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -161,10 +180,7 @@
       line-height: $line-height-100;
       letter-spacing: $letter-spacing-0;
       text-transform: $text-transform-uppercase;
-      padding-left: 8px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-right: 16px;
+      padding: 5px 16px 5px 8px;
       
       &::placeholder {
         font-family: $font-family-arial;
@@ -173,10 +189,7 @@
         line-height: $line-height-100;
         letter-spacing: $letter-spacing-0;
         text-transform: $text-transform-uppercase;
-        padding-left: 8px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 16px;
+        padding: 5px 16px 5px 8px;
       }
     }
   }
@@ -211,22 +224,4 @@
     display: block;
   }
 
-  .search-input {
-    width: 200px;
-    font-family: $font-family-arial;
-    font-weight: $font-weight-normal;
-    font-size: $font-size-13-3;
-    line-height: $line-height-100;
-    letter-spacing: $letter-spacing-0;
-    text-transform: $text-transform-uppercase;
-    
-    &::placeholder {
-      font-family: $font-family-arial;
-      font-weight: $font-weight-normal;
-      font-size: $font-size-13-3;
-      line-height: $line-height-100;
-      letter-spacing: $letter-spacing-0;
-      text-transform: $text-transform-uppercase;
-    }
-  }
 }

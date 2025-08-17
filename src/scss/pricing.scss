@@ -114,7 +114,7 @@
 }
 
 // Медиа-запрос для мобильных устройств
-@media (max-width: 414px) {
+@media (width <= 414px) {
   .pricing-title {
     font-size: $h2-mobile-font-size;
     line-height: $h2-mobile-line-height;
@@ -142,9 +142,7 @@
       padding-bottom: 37px;
     }
 
-    .btn {
-  
-    }
+
     
     .pricing-footer {
       padding-bottom: 47px;

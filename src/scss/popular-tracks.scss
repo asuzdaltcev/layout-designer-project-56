@@ -34,8 +34,7 @@
 .track-columns {
   display: grid;
   grid-template-columns: repeat(2, 551px);
-  row-gap: 25px;
-  column-gap: 50px;
+  gap: 25px 50px;
 }
 
 .popular-track {
@@ -93,8 +92,7 @@
 }
 
 // Медиа-запрос для мобильных устройств
-@media (max-width: 414px) {
-
+@media (width <= 414px) {
   .popular-tracks-title {
     @include section-title-mobile;
     margin-bottom: 0;
@@ -106,12 +104,10 @@
   }
 
   .popular-track {
-
     img {
       width: 55px;
       height: 55px;
     }
-
     .track-info {
       .track-name {
         font-size: 12px;

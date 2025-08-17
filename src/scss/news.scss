@@ -123,8 +123,7 @@
 }
 
 // Медиа-запрос для мобильных устройств
-@media (max-width: 414px) {
-
+@media (width <= 414px) {
   .news-title {
     font-size: $h2-mobile-font-size;
     line-height: $h2-mobile-line-height;
@@ -144,12 +143,14 @@
 
     .news-body {
       margin-bottom: 24px;
-      h3 {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 16px;
-      }
-      p {
+
+              h3 {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 16px;
+        }
+
+        p {
         line-height: 1.5;
       }
     }

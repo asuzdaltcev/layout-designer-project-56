@@ -12,8 +12,7 @@
   .similar-artists-grid {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    gap: 50px;
-    row-gap: 25px;
+    gap: 25px 50px;
   }
   
   .similar-item {
@@ -43,8 +42,7 @@
     }
   }
   
-  @media (max-width: 414px) {
-    
+  @media (width <= 414px) {
     .similar-artists-title {
       @include section-title-mobile;
       margin-bottom: 48px;
@@ -52,9 +50,7 @@
     
     .similar-artists-grid {
       grid-template-columns: repeat(2, 137px);
-      gap: 25px;
-      row-gap: 28px;
-      column-gap: 50px;
+      gap: 28px 50px;
     }
     
     .similar-item {
