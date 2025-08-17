@@ -541,6 +541,8 @@ h2 {
   }
   .pricing-item .pricing-footer {
     padding-bottom: 47px;
+    font-size: 13.8px;
+    line-height: 1.5;
   }
   .pricing-item.bg-standard {
     background-position: unset;
@@ -549,10 +551,10 @@ h2 {
     background-position: unset;
   }
   .pricing-item.bg-standard .pricing-footer {
-    padding-bottom: 69px;
+    padding-bottom: 43px;
   }
   .pricing-item.bg-premium .pricing-footer {
-    padding-bottom: 72px;
+    padding-bottom: 49px;
   }
 }
 .news {
