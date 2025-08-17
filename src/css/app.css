@@ -1110,24 +1110,19 @@ h2 {
 }
 
 @media (max-width: 414px) {
-  .popular-tracks {
-    padding-top: 60px;
-  }
   .popular-tracks-title {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .track-columns {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .popular-track {
-    padding: 12px;
+    gap: 25px;
   }
   .popular-track img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
   .popular-track .track-info .track-name {
     font-size: 12px;
