@@ -1147,12 +1147,13 @@ h2 {
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 .discography .discography-grid {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   gap: 50px;
-  row-gap: 28px;
+  row-gap: 25px;
 }
 .discography .discography-item {
   display: flex;
@@ -1166,6 +1167,7 @@ h2 {
   margin-bottom: 15px;
   transition: transform 0.3s ease;
   border-radius: 0;
+  margin-bottom: 18px;
 }
 .discography .discography-item .discography-image:hover {
   transform: scale(1.05);

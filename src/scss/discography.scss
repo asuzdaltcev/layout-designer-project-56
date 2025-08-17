@@ -6,13 +6,14 @@
   
   .discography-title {
     @include section-title;
+    margin-bottom: 48px;
   }
   
   .discography-grid {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     gap: 50px;
-    row-gap: 28px;
+    row-gap: 25px;
   }
   
   .discography-item {
@@ -21,6 +22,7 @@
     .discography-image {
       @include standard-image;
       border-radius: 0;
+      margin-bottom: 18px;
     }
     
     .discography-info {
