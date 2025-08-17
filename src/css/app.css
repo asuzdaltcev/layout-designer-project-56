@@ -1247,7 +1247,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   gap: 50px;
-  row-gap: 26px;
+  row-gap: 25px;
 }
 .similar-artists .similar-item {
   display: flex;
