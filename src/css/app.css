@@ -1157,8 +1157,6 @@ h2 {
 .discography .discography-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 .discography .discography-item .discography-image {
   width: 250px;
@@ -1242,8 +1240,6 @@ h2 {
 .similar-artists .similar-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 .similar-artists .similar-item .similar-image {
   width: 250px;
